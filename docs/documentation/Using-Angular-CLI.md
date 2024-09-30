@@ -1,16 +1,15 @@
 Using Flex-Layout with the the Angular CLI is easy.
 
 ## Install the CLI
- 
- ```bash
+
+```bash
 # Global
 npm uninstall -g @angular/cli
 npm install -g @angular/cli
 ```
 
- 
 ## Create a new project
- 
+
 ```bash
  ng new my-project
 ```
@@ -30,7 +29,7 @@ The new command creates a project with a build system for your Angular app.
 npm install @angular/flex-layout --save
 ```
 
->  This installs the most recent npm release of Flex-Layout.
+> This installs the most recent npm release of Flex-Layout.
 
 ```bash
 npm install angular/flex-layout-builds --save
@@ -39,12 +38,13 @@ npm install angular/flex-layout-builds --save
 > This installs a nightly build which incorporates the latest updates not yet published to NPM
 
 ## Import the Angular Flex-Layout NgModule
-  
+
 **src/app/app.module.ts**
+
 ```typescript
 import {NgModule} from '@angular/core';
 import {FlexLayoutModule} from '@angular/flex-layout';
-// other imports 
+// other imports
 @NgModule({
   imports: [FlexLayoutModule],
   ...
@@ -53,7 +53,8 @@ export class PizzaPartyAppModule {}
 ```
 
 ## Configuring SystemJS
-If your project is using SystemJS for module loading, you will need to add `@angular/flex-layout` 
+
+If your project is using SystemJS for module loading, you will need to add `@angular/flex-layout`
 to the SystemJS configuration:
 
 ```js
@@ -70,5 +71,5 @@ System.config({
 
 Developers are encouraged to review the live demos and source for the Flex-Layout Demos:
 
-* [Live Demos](https://tburleson-layouts-demos.firebaseapp.com/)
-* [Demo Source Code](https://github.com/angular/flex-layout/blob/master/src/apps/demo-app/)
+- [Live Demos](https://tburleson-layouts-demos.firebaseapp.com/)
+- [Demo Source Code](https://github.com/angular/flex-layout/blob/master/src/projects/demo-app/)
